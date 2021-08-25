@@ -22,12 +22,14 @@
 </div>
 
 <div class="row justify-content-center"> 
+@foreach($images as $image)
   <div class="column">
-  @foreach($images as $image)
+  
     <img src="{{asset('storage/uploads/'.$image->name)}}" style="width:100%">
    
-@endforeach
+
   </div>
+  @endforeach
   <!-- <div class="column">
       
     <img src="{{asset('images/sai.png')}}" style="width:100%">
